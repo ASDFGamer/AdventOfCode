@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cargo install cargo-generate
-#cargo install cargo-watch
+cargo install cargo-watch
 
 curr_dir=$(pwd)
 
@@ -14,4 +14,4 @@ export PATH="$PATH:$HOME/bin"
 echo 'PATH="$PATH:$HOME/bin"' >> ~/.bashrc
 
 cd $curr_dir
-echo "Devconatiner setup finished"
+echo "Devcontainer setup finished"
