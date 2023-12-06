@@ -13,6 +13,6 @@ fn part1(input: &[&str]) -> String {
 
 #[test]
 fn test_input() {
-    let result = part2(&include_lines!("{{project-name}}/res/part1_test"));
+    let result = part1(&include_lines!("{{project-name}}/res/part1_test"));
     assert_eq!(result, "".to_string())
 }
