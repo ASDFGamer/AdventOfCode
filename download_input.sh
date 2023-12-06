@@ -13,4 +13,4 @@ if [ ! -f $session_id_file ]; then
     exit 1
 fi
 session_id=$(cat $session_id_file)
-curl -H "cookie: session=$session_id" https://adventofcode.com/2023/day/${day}/input -o "./day-${day}/src/bin/input" > /dev/null
+curl -H "cookie: session=$session_id" https://adventofcode.com/2023/day/${day}/input -o "./day-${day}/res/input" > /dev/null
