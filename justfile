@@ -4,4 +4,4 @@ create day:
 run day part:
     cargo run --bin {{part}} --package {{day}}
 test day part:
-    cargo run --bin {{part}} --package {{day}}
+    cargo test --bin {{part}} --package {{day}}
