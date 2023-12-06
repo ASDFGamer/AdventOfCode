@@ -1,17 +1,18 @@
 use aoc_utils;
+use include_lines::include_lines;
 
 fn main() {
-    let input = aoc_utils::load_input!();
-    part2(input);
+    let input = include_lines!("{{project-name}}/res/input");
+    let result = part2(&input);
+    println!("Result: {}", result)
 }
 
-fn part2(input: Vec<&str>) -> String {
+fn part2(input: &[&str]) -> String {
     todo!()
 }
 
 #[test]
 fn test_input() {
-    let test_input: Vec<&str> = "".split("\n").collect();
-    let result = part2(test_input);
+    let result = part2(&include_lines!("{{project-name}}/res/part2_test"));
     assert_eq!(result, "".to_string())
 }
